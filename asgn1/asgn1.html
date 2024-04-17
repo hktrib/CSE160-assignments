@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled Document</title>
+    <!-- Add your CSS links or styles here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="main()">
+    <!-- Your HTML content goes here -->
+    <h1>Hello, World!</h1>
+    <canvas id="asgn1" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>
+
+    <div>
+        <button type="button" id="red">Red</button>
+        <button type="button" id="green">Green</button>
+        <button type="button" id="blue">Blue</button>
+        <button type="button" id="rainbow">Rainbow</button>
+        <button type="button" id="clear">Clear Canvas</button>
+    </div>
+
+    <div>
+        <button type="button" id="triangle">Triangle</button>
+        <button type="button" id="point">Point</button>
+        <button type="button" id="circle">Circle</button>
+    </div>
+
+    <div>
+        <label for="redSlider">Red</label>
+        <input type="range" min="0" max="100" value="50" id="redSlider">
+    
+        <label for="greenSlider">Green</label>
+        <input type="range" min="0" max="100" value="50" id="greenSlider">
+    
+        <label for="blueSlider">Blue</label>
+        <input type="range" min="0" max="100" value="50" id="blueSlider">
+        
+        
+    </div>
+    
+    
+    <div>
+        <label for="sizeSlider">Size</label>
+        <input type="range" min="0.0" max="100.0" value="10.0" id="sizeSlider">
+        <label for="segmentSlider">Segments</label>
+        <input type="range" min="5" max="12" value="7" id="segmentSlider">
+    </div>
+
+
+    <p><strong>Awesomeness!!! Check out my rainbow paintbrush by clicking the 'Rainbow' button above</strong></p>
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="asgn1.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Rainbow.js"></script>
+</body>
+</html>

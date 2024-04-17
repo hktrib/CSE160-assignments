@@ -1,5 +1,3 @@
-
-
 var canvas, ctx;
 
 function main() {
