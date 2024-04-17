@@ -116,9 +116,18 @@ function main() {
 
 function htmlUIActions() {
     // COLOR MODES
-    document.getElementById("red").onclick = () => {g_selectedColor = [1.0, 0.0, 0.0, 1.0]}
-    document.getElementById("green").onclick = () => {g_selectedColor = [0.0, 1.0, 0.0, 1.0]}
-    document.getElementById("blue").onclick = () => {g_selectedColor = [0.0, 0.0, 1.0, 1.0]}
+    document.getElementById("red").onclick = () => {
+        g_selectedRAINBOWMODE = false
+        g_selectedColor = [1.0, 0.0, 0.0, 1.0]
+    }
+    document.getElementById("green").onclick = () => {
+        g_selectedRAINBOWMODE = false
+        g_selectedColor = [0.0, 1.0, 0.0, 1.0]
+    }
+    document.getElementById("blue").onclick = () => {
+        g_selectedRAINBOWMODE = false
+        g_selectedColor = [0.0, 0.0, 1.0, 1.0]
+    }
     document.getElementById("rainbow").onclick = () => {g_selectedRAINBOWMODE = true}
 
     // SHAPE MODES
